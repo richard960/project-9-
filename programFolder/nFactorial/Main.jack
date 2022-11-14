@@ -1,0 +1,23 @@
+class Main {
+   function void main() {
+      var int i, n, fact;
+      let fact = 1;
+      let n = Keyboard.readInt("Enter a number: ");
+      let n = n + 1;
+      if(n < 0) {
+        do Output.printString("Can not get factorial of a negative number");
+      } else {
+        let i = 1;
+        while (i < n) {
+          let fact = fact * i;
+          let i = i + 1;
+        }
+        let n = n - 1;
+        do Output.printInt(n);
+        do Output.printString(" factorial is ");
+        do Output.printInt(fact);
+        do Output.println();
+      }
+      return;
+   }
+}
